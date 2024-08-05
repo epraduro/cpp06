@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Serializer.hpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: epraduro <epraduro@student.42nice.fr>      +#+  +:+       +#+        */
+/*   By: epraduro <epraduro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 14:41:08 by epraduro          #+#    #+#             */
-/*   Updated: 2024/02/20 15:12:44 by epraduro         ###   ########.fr       */
+/*   Updated: 2024/08/05 14:30:30 by epraduro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,10 @@ struct Data {
 
 class Serializer {
 
+	private :
+		Serializer();
 	public :
 
-		Serializer();
 		~Serializer();
 		Serializer(const Serializer &copy);
 		Serializer& operator=(const Serializer &copy);

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ScalarConverter.hpp                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: epraduro <epraduro@student.42nice.fr>      +#+  +:+       +#+        */
+/*   By: epraduro <epraduro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 12:42:51 by epraduro          #+#    #+#             */
-/*   Updated: 2024/02/19 12:51:32 by epraduro         ###   ########.fr       */
+/*   Updated: 2024/08/05 17:16:51 by epraduro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,16 @@
 #include <cmath>
 
 class ScalarConverter {
-
-	public:
+	private:
 
 		ScalarConverter();
+	public:
+		
 		~ScalarConverter();
 		ScalarConverter(const ScalarConverter &copy);
 		ScalarConverter& operator=(const ScalarConverter &copy);
 		
 		static void convert(std::string str);
+		static void char_convert(char c);
 
 };
